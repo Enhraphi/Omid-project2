@@ -1,0 +1,131 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d7e1ec);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .form-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+      animation: slideIn 0.8s ease forwards;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2d3436;
+      font-size: 26px;
+      position: relative;
+    }
+    h3::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #0984e3;
+      border-radius: 2px;
+      display: block;
+      margin: 10px auto 0;
+      animation: pulse 2s infinite;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    input[type="file"] {
+      padding: 12px 15px;
+      margin-bottom: 18px;
+      font-size: 16px;
+      border: 2px solid #dfe6e9;
+      border-radius: 12px;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+    }
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    textarea:focus,
+    input[type="file"]:focus {
+      border-color: #0984e3;
+      outline: none;
+      box-shadow: 0 0 8px rgba(9,132,227,0.4);
+    }
+    textarea {
+      min-height: 100px;
+      font-family: 'Vazirmatn', sans-serif;
+    }
+    .btn-submit {
+      background: linear-gradient(45deg, #0984e3, #74b9ff);
+      color: white;
+      font-size: 18px;
+      padding: 14px 0;
+      border: none;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(9,132,227,0.6);
+      transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .btn-submit:hover {
+      background: linear-gradient(45deg, #74b9ff, #0984e3);
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(9,132,227,0.9);
+    }
+    .error-message {
+      background: #ff7675;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(255,0,0,0.3);
+    }
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0.5;}
+    }
+
+    /* Responsive */
+    @media (max-width: 550px) {
+      .form-container {
+        padding: 25px 20px;
+      }
+      h3 {
+        font-size: 22px;
+      }
+      input[type="text"],
+      input[type="number"],
+      textarea,
+      input[type="file"] {
+        font-size: 14px;
+        padding: 10px 12px;
+      }
+      .btn-submit {
+        font-size: 16px;
+        padding: 12px 0;
+      }
+    }
+  

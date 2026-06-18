@@ -1,0 +1,437 @@
+
+    body {
+      background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+      font-family: 'Vazirmatn', sans-serif;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 8px 20px;
+      background-color: #0b5ed7;
+      border-radius: 20px;
+      transition: 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #ffc107;
+      color: #000;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #0d6efd;
+      display: inline-block;
+    }
+
+    .product-card {
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+     
+    .product-img {
+      width: 100%;
+      max-height: 200px; /* تنظیم حداکثر ارتفاع */
+      object-fit: cover; /* پر کردن فضای تصویر بدون تغییر نسبت */
+    }
+
+    .btn-buy {
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+
+    .social-icons a {
+      font-size: 20px;
+      color: white;
+      margin-left: 10px;
+    }
+
+    .badge-top {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+ .welcome-alert {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #d1ecf1;
+  color: #0c5460;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1050;
+  text-align: right;    /* متن راست‌چین */
+  direction: rtl;       /* جهت متن راست به چپ */
+  min-width: 150px;
+}
+ .products-section {
+    background-color: #f5f5f5;
+    padding: 20px 10px;
+  }
+  /* راست‌چین کردن متن داخل کارت */
+  .product-card .card-body {
+    text-align: right;
+  }
+  /* دکمه‌ها کنار هم، راست‌چین و با فاصله مناسب */
+  .btn-group-custom {
+    display: flex;
+    justify-content: flex-start; /* دکمه‌ها سمت راست هستند اما چون راست‌چین، باید justify-content:flex-start باشه */
+    gap: 8px;
+    margin-top: 10px;
+  }
+.products-section,
+.products-section .row {
+  direction: rtl;  /* کل محتوای داخلش راست‌چین میشه */
+}
+.row.g-3 {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-md-2 {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-img {
+  max-height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.btn-group-custom {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.btn-buy {
+  flex: 1;
+  font-size: 0.9rem;
+  padding: 6px 0;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.sharifi-logo {
+    margin-right: auto; /* برای راست‌چین */
+      margin-right: 0;      /* مطمئن شو فاصله از چپ صفر هست */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  background: linear-gradient(to , #66ccff, #3399ff, #0066cc);
+  padding: 6px 18px;
+  border-radius: 16px;
+  display: inline-block;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.25),
+    inset 0 -1px 4px rgba(255, 255, 255, 0.3),
+    inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.3),
+    2px 2px 4px rgba(0, 102, 204, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.sharifi-logo:hover {
+  transform: scale(1.03);
+}
+/* منوی اصلی */
+/* =========================
+   FIX MENU - آخر فایل قرار بده
+========================= */
+
+nav ul li{
+    position: relative !important;
+}
+
+.nav-center li,
+.nav-right li,
+.nav-left li{
+    display:inline-block !important;
+}
+
+/* منوی محصولات */
+.dropdown{
+    position:relative !important;
+}
+
+.dropdown > .submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    min-width:220px;
+    background:#fff;
+    border-radius:12px;
+    padding:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    z-index:9999;
+    overflow:visible !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    transform:none !important;
+}
+
+.dropdown:hover > .submenu{
+    display:block;
+}
+
+/* آیتم های زیرمنو */
+.submenu li{
+    display:block !important;
+    width:100%;
+    margin:0 !important;
+}
+
+.submenu li a{
+    display:block !important;
+    width:100%;
+    color:#333 !important;
+    background:transparent !important;
+    box-shadow:none !important;
+    text-align:right;
+    border-radius:8px !important;
+}
+
+.submenu li a:hover{
+    background:#eef5ff !important;
+    color:#0d6efd !important;
+}
+
+/* زیرمنوی برندها */
+.dropdown-sub{
+    position:relative !important;
+}
+
+.subsubmenu{
+    display:none;
+    position:absolute;
+    top:0;
+    right:100%;
+    min-width:190px;
+    background:#fff;
+    border-radius:12px;
+    padding:8px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    z-index:10000;
+    overflow:visible !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    transform:none !important;
+}
+
+.dropdown-sub:hover > .subsubmenu{
+    display:block;
+}
+
+.subsubmenu li{
+    display:block !important;
+    width:100%;
+    margin:0 !important;
+}
+
+.subsubmenu li a{
+    display:block;
+    width:100%;
+    color:#333 !important;
+    background:transparent !important;
+}
+
+.subsubmenu li a:hover{
+    background:#eef5ff !important;
+    color:#0d6efd !important;
+}
+/* ===== هدر حرفه ای ===== */
+
+header{
+  background: linear-gradient(135deg,#0d6efd,#0b5ed7);
+  padding: 15px 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.15);
+  margin-bottom: 25px;
+}
+
+header nav{
+  min-height: 70px;
+}
+
+/* لوگو */
+.sharifi-logo{
+  font-size: 32px;
+  border-radius: 18px;
+  padding: 8px 20px;
+}
+
+/* منوها */
+.nav-center,
+.nav-right,
+.nav-left{
+  gap: 8px;
+}
+
+nav ul li a{
+  border-radius: 25px;
+  padding: 10px 18px;
+  transition: all .3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+nav ul li a:hover{
+  transform: translateY(-2px);
+  background: #ffc107;
+  color: #000;
+}
+
+/* سبد خرید */
+.nav-left a{
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.2);
+}
+
+.nav-left a:hover{
+  background: #198754;
+  color: white;
+}
+
+/* جستجو */
+form.d-flex{
+  justify-content: center;
+  margin-top: 15px;
+}
+
+form.d-flex input[type="search"]{
+  height: 38px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+form.d-flex button{
+  height: 38px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+/* زیرمنوی محصولات */
+.dropdown > .submenu{
+  margin-top: 8px;
+  border: none;
+  overflow: hidden;
+}
+
+.submenu > li > a{
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.submenu > li > a:hover{
+  background: #b2ebf2 !important;
+}
+
+.subsubmenu{
+  overflow: hidden;
+}
+
+/* خوش آمدگویی */
+.welcome-alert{
+  border-right: 4px solid #0d6efd;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+/* تعداد سبد خرید */
+.badge{
+  font-size: 11px;
+  padding: 6px 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+
+/* موبایل */
+@media (max-width:768px){
+
+  nav{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-center{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-right,
+  .nav-left{
+    justify-content: center;
+  }
+
+  .sharifi-logo{
+    margin-bottom: 10px;
+  }
+}  

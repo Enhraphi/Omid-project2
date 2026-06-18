@@ -1,0 +1,137 @@
+
+  body {
+  direction: rtl;
+  text-align: right;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  font-family: 'Vazirmatn', sans-serif;
+  padding: 30px 15px;
+}
+
+    h3 {
+      color: #0d6efd;
+      font-weight: 900;
+      margin-bottom: 30px;
+      text-align: center;
+      text-shadow: 1px 1px 3px rgba(13,110,253,0.4);
+    }
+
+    .btn-add-product {
+      background-color: #0b5ed7;
+      border-radius: 20px;
+      padding: 10px 25px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(11, 94, 215, 0.4);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .btn-add-product:hover {
+      background-color: #ffc107;
+      color: #000;
+      box-shadow: 0 8px 25px rgba(255, 193, 7, 0.6);
+      text-decoration: none;
+    }
+
+    table {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    table th {
+      background-color: #0d6efd;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: middle;
+      border: none !important;
+      padding: 15px 10px;
+    }
+
+    table td {
+      vertical-align: middle;
+      text-align: center;
+      border: none !important;
+      padding: 12px 8px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 80px;
+      height: auto;
+    }
+
+    .btn-warning, .btn-danger {
+      border-radius: 20px;
+      font-weight: 700;
+      padding: 6px 15px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .btn-warning:hover {
+      background-color: #ffc107;
+      color: #000;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255, 193, 7, 0.6);
+    }
+
+    .btn-danger:hover {
+      background-color: #dc3545cc;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(220, 53, 69, 0.6);
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        background: white;
+        padding: 15px;
+      }
+
+      td {
+        border: none !important;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+      }
+
+      td::before {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 45%;
+        padding-right: 15px;
+        white-space: nowrap;
+        font-weight: bold;
+        color: #0d6efd;
+      }
+
+      td:nth-of-type(1)::before { content: "نام محصول"; }
+      td:nth-of-type(2)::before { content: "قیمت"; }
+      td:nth-of-type(3)::before { content: "عکس"; }
+      td:nth-of-type(4)::before { content: "دسته‌بندی"; }
+      td:nth-of-type(5)::before { content: "عملیات"; }
+    }
+  

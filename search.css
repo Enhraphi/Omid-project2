@@ -1,0 +1,82 @@
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        h1 {
+            color: #0b5ed7;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        .product-card {
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            box-shadow: 0 6px 20px rgb(11 94 215 / 0.3);
+        }
+        .product-img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 180px;
+            object-fit: contain;
+            background-color: white;
+        }
+        .btn-group-custom {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .btn-buy {
+            border-radius: 20px;
+            padding: 6px 15px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .card-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .card-text {
+            text-align: center;
+            font-weight: 700;
+            color: #dc3545; /* متن قرمز */
+            font-size: 1rem;
+            margin-top: 6px;
+        }
+        .no-results {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #6c757d;
+            margin-top: 60px;
+        }
+        .search-summary {
+            font-weight: 600;
+            color: #0b5ed7;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .btn-back {
+            border-radius: 20px;
+            background-color: #0b5ed7;
+            color: white;
+            padding: 8px 22px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 30px auto 0;
+            transition: background-color 0.3s ease;
+            font-weight: 600;
+        }
+        .btn-back:hover {
+            background-color: #084298;
+            color: white;
+            text-decoration: none;
+        }
+    

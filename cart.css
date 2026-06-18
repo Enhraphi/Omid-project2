@@ -1,0 +1,177 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .cart-container {
+      background: white;
+      padding: 30px 35px;
+      border-radius: 18px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.07);
+      width: 100%;
+      max-width: 520px;
+      animation: fadeInUp 0.7s ease forwards;
+    }
+    h3 {
+      margin-bottom: 25px;
+      font-size: 28px;
+      color: #2d3436;
+      text-align: center;
+      position: relative;
+      font-weight: 700;
+    }
+    h3::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: #0984e3;
+      margin: 8px auto 0;
+      border-radius: 3px;
+      animation: pulse 2s infinite;
+    }
+    ul.list-group {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+    li.list-group-item {
+      padding: 14px 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 17px;
+      color: #444;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background: #f7f9fc;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.03);
+    }
+    li.list-group-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    a.btn-remove {
+      background: #d63031;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+    a.btn-remove:hover {
+      background: #e17055;
+    }
+    .total-price {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      color: #2d3436;
+      margin-bottom: 25px;
+      border-top: 2px solid #0984e3;
+      padding-top: 15px;
+      letter-spacing: 1px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 0;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      cursor: pointer;
+      transition: background 0.4s ease, transform 0.3s ease;
+      box-shadow: 0 10px 25px rgba(9,132,227,0.6);
+    }
+    .btn-checkout {
+      background: linear-gradient(45deg, #0984e3, #74b9ff);
+      color: white;
+      margin-bottom: 15px;
+    }
+    .btn-checkout:hover {
+      background: linear-gradient(45deg, #74b9ff, #0984e3);
+      transform: scale(1.05);
+      box-shadow: 0 14px 35px rgba(9,132,227,0.9);
+    }
+    .btn-back {
+      background: #636e72;
+      color: white;
+    }
+    .btn-back:hover {
+      background: #2d3436;
+      transform: scale(1.05);
+    }
+    .empty-message {
+      font-size: 18px;
+      text-align: center;
+      color: #636e72;
+      padding: 40px 20px;
+      user-select: none;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      } to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0.5;}
+    }
+
+    /* Responsive */
+    @media (max-width: 560px) {
+      .cart-container {
+        padding: 25px 20px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      li.list-group-item {
+        font-size: 16px;
+        padding: 12px 16px;
+      }
+      a.btn-remove {
+        padding: 5px 12px;
+        font-size: 13px;
+      }
+      .btn {
+        font-size: 18px;
+        padding: 12px 0;
+      }
+    }
+    button.btn-quantity {
+  background: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 6px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+button.btn-quantity:hover {
+  background: #74b9ff;
+}
+
+  

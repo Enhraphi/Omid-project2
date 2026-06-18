@@ -1,0 +1,126 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .form-wrapper {
+      background: white;
+      padding: 35px 40px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      max-width: 450px;
+      width: 100%;
+      animation: fadeIn 1s ease forwards;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00796b;
+      font-size: 28px;
+      position: relative;
+      font-weight: 700;
+    }
+    h3::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 5px;
+      background: #004d40;
+      border-radius: 3px;
+      margin: 10px auto 0;
+      animation: pulse 2.5s infinite;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="text"],
+    textarea {
+      padding: 14px 18px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      border: 2px solid #80cbc4;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+      font-family: 'Vazirmatn', sans-serif;
+    }
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #004d40;
+      outline: none;
+      box-shadow: 0 0 10px rgba(0,77,64,0.5);
+    }
+    textarea {
+      min-height: 100px;
+    }
+    .btn-submit {
+      background: linear-gradient(45deg, #00796b, #26a69a);
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 14px 0;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(38,166,154,0.7);
+      transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .btn-submit:hover {
+      background: linear-gradient(45deg, #26a69a, #00796b);
+      transform: scale(1.05);
+      box-shadow: 0 14px 35px rgba(38,166,154,0.9);
+    }
+    .error-message {
+      background: #ff8a80;
+      color: #b71c1c;
+      padding: 12px 18px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(183,28,28,0.4);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      } to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0.5;}
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .form-wrapper {
+        padding: 25px 20px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      input[type="text"],
+      textarea {
+        font-size: 14px;
+        padding: 12px 14px;
+      }
+      .btn-submit {
+        font-size: 18px;
+        padding: 12px 0;
+      }
+    }
+  
